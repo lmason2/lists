@@ -27,7 +27,24 @@
                         "tertiary": "2021"
                     }
                 ],
-                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             }
@@ -62,7 +79,24 @@
                         "tertiary": "12/12/21"
                     }
                 ],
-                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             }
@@ -97,7 +131,24 @@
                         "tertiary": "2021"
                     }
                 ],
-                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             }

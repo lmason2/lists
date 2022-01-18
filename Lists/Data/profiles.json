@@ -39,7 +39,24 @@
                         "tertiary": "2013"
                     },
                 ],
-                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": true
             },
@@ -52,7 +69,24 @@
                         "basicInfo": "Dave",
                     }
                 ],
-                "comments": ["Fire", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             },
@@ -65,7 +99,24 @@
                         "basicInfo": "Biathlon",
                     }
                 ],
-                "comments": ["Fire", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             },
@@ -78,7 +129,24 @@
                         "basicInfo": "Play Test",
                     }
                 ],
-                "comments": ["Fire", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             },
@@ -91,7 +159,24 @@
                         "basicInfo": "Reese's Fast Break",
                     }
                 ],
-                "comments": ["Fire", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             }
@@ -128,7 +213,24 @@
                         "basicInfo": "Mac Miller"
                     },
                 ],
-                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             }
@@ -175,7 +277,24 @@
                         "tertiary": "2007"
                     },
                 ],
-                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             }
@@ -217,7 +336,24 @@
                         "secondary": "Crispy Chicken Sandwich"
                     },
                 ],
-                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "comments": [
+                    {
+                        "username": "lukemason11",
+                        "content": "Fire"
+                    },
+                    {
+                        "username": "bhogan9",
+                        "content": "No way"
+                    },
+                    {
+                        "username": "yacineguermali",
+                        "content": "Swap first two"
+                    },
+                    {
+                        "username": "sam_mccloughan",
+                        "content": "Agreed"
+                    }
+                ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
                 "pinned": false
             }

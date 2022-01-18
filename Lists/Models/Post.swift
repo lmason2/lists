@@ -12,7 +12,7 @@ struct Post: Codable, Identifiable {
     let typeString: String
     let tags: [String]
     let ranking: [Rankable]
-    let comments: [String]
+    let comments: [Comment]
     let associations: [String]
     let pinned: Bool
     var type: type {

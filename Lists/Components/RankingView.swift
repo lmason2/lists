@@ -13,6 +13,8 @@ struct RankingView: View {
     let post: Post
     let profile: Bool
     let discover: Bool
+    @State var commentsOpen: Bool = false
+    let users: [Profile] = Bundle.main.decode("profiles.json")
     
     var body: some View {
         if discover {
@@ -23,9 +25,18 @@ struct RankingView: View {
                 // Ranking images
                 RankingImagesView(rankable: post.ranking)
                 
-                // Footer comments and users
-                RankingFooterView(comments: post.comments, associations: post.associations)
+                if commentsOpen {
+                    // Footer comments and users
+                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
+                    CommentsView(comments: post.comments, profiles: users)
+                }
+                
+                else {
+                    // Footer comments and users
+                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
+                }
             }
+            .transition(.scale)
             .padding(.horizontal, 10)
             .padding(.vertical, 3)
             .background(
@@ -41,9 +52,18 @@ struct RankingView: View {
                 // Ranking images
                 RankingImagesView(rankable: post.ranking)
                 
-                // Footer comments and users
-                RankingFooterView(comments: post.comments, associations: post.associations)
+                if commentsOpen {
+                    // Footer comments and users
+                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
+                    CommentsView(comments: post.comments, profiles: users)
+                }
+                
+                else {
+                    // Footer comments and users
+                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
+                }
             }
+            .transition(.scale)
             .padding(.horizontal, 10)
             .padding(.vertical, 3)
             .background(

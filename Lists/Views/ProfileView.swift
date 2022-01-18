@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ProfileView: View {
     var items: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
-    
     let profile: Profile
     var body: some View {
         VStack {
