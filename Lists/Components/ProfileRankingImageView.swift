@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ProfileRankingImageView: View {
+    // MARK: - PROPERTIES
     let image: String
     let tags: [String]
+    
+    // MARK: - BODY
     var body: some View {
         HStack {
             Spacer()
             Image(image)
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width * 0.17, height: UIScreen.main.bounds.width * 0.17)
+                .clipped()
+                .overlay(Rectangle().stroke(.white, lineWidth: 1))
             
             VStack(alignment: .leading) {
                 ForEach(tags, id: \.self) {tag in
@@ -28,10 +33,10 @@ struct ProfileRankingImageView: View {
                         .background(
                             LinearGradient(gradient: Gradient(colors: [Color.red.opacity(0.7), Color.purple.opacity(0.7)]), startPoint: .topLeading, endPoint: .bottomTrailing)
                         )
-                }
-            }
+                } //: LOOP
+            } //: VSTACK
             Spacer()
-        }
+        } //: HSTACK
     }
 }
 

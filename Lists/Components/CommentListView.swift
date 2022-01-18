@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct CommentListView: View {
+    // MARK: - PROPERTIES
     let comment: Comment
     let profile: Profile
     @State private var liked: Bool = false
+    
+    // MARK: - BODY
     var body: some View {
         HStack {
             Image(profile.image)
@@ -25,8 +28,9 @@ struct CommentListView: View {
             Image(systemName: liked ? "hand.thumbsup.fill" : "hand.thumbsup")
                 .onTapGesture {
                     liked.toggle()
-                }
-        }
+                } //: GESTURE
+                .padding(.trailing, 10)
+        } //: HSTACK
     }
 }
 

@@ -12,7 +12,6 @@
 		9A015E8A2795D87900F97DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A015E892795D87900F97DCE /* Assets.xcassets */; };
 		9A015E8D2795D87900F97DCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A015E8C2795D87900F97DCE /* Preview Assets.xcassets */; };
 		9A015E992795D8EB00F97DCE /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015E982795D8EB00F97DCE /* AuthenticationView.swift */; };
-		9A015E9C2795D94A00F97DCE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015E9B2795D94A00F97DCE /* SettingsView.swift */; };
 		9A015EA02795D95E00F97DCE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015E9F2795D95E00F97DCE /* ProfileView.swift */; };
 		9A015EA22795D96500F97DCE /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015EA12795D96500F97DCE /* FeedView.swift */; };
 		9A015EA42795D96C00F97DCE /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015EA32795D96C00F97DCE /* DiscoverView.swift */; };
@@ -40,6 +39,11 @@
 		9AD23F412796EB7F0006352B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F402796EB7F0006352B /* CommentsView.swift */; };
 		9AD23F432796EEC10006352B /* CommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F422796EEC10006352B /* CommentListView.swift */; };
 		9AD23F45279709D40006352B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F44279709D40006352B /* Comment.swift */; };
+		9AD23F4727974D150006352B /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4627974D150006352B /* CreatePostView.swift */; };
+		9AD23F4927975AC10006352B /* MainDiscoverRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4827975AC10006352B /* MainDiscoverRankingView.swift */; };
+		9AD23F4B27975B6F0006352B /* MainFeedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */; };
+		9AD23F4D27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */; };
+		9AD23F4F27975BE70006352B /* ExpandedMainFeedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +53,6 @@
 		9A015E892795D87900F97DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A015E8C2795D87900F97DCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A015E982795D8EB00F97DCE /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
-		9A015E9B2795D94A00F97DCE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9A015E9F2795D95E00F97DCE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9A015EA12795D96500F97DCE /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9A015EA32795D96C00F97DCE /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
@@ -77,6 +80,11 @@
 		9AD23F402796EB7F0006352B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		9AD23F422796EEC10006352B /* CommentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView.swift; sourceTree = "<group>"; };
 		9AD23F44279709D40006352B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		9AD23F4627974D150006352B /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		9AD23F4827975AC10006352B /* MainDiscoverRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiscoverRankingView.swift; sourceTree = "<group>"; };
+		9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedRankingView.swift; sourceTree = "<group>"; };
+		9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedMainDiscoverRankingView.swift; sourceTree = "<group>"; };
+		9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedMainFeedRankingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +151,10 @@
 		9A015E942795D88700F97DCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A015E9B2795D94A00F97DCE /* SettingsView.swift */,
 				9A015E9F2795D95E00F97DCE /* ProfileView.swift */,
 				9A015EA12795D96500F97DCE /* FeedView.swift */,
 				9A015EA32795D96C00F97DCE /* DiscoverView.swift */,
+				9AD23F4627974D150006352B /* CreatePostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +206,10 @@
 				9AD23F3E279645220006352B /* LikeCounter.swift */,
 				9AD23F402796EB7F0006352B /* CommentsView.swift */,
 				9AD23F422796EEC10006352B /* CommentListView.swift */,
+				9AD23F4827975AC10006352B /* MainDiscoverRankingView.swift */,
+				9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */,
+				9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */,
+				9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -283,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD23F3B2796414D0006352B /* DiscoverRankingView.swift in Sources */,
+				9AD23F4927975AC10006352B /* MainDiscoverRankingView.swift in Sources */,
 				9A015EB62795EA3D00F97DCE /* RankableSingleImageView.swift in Sources */,
 				9AD23F412796EB7F0006352B /* CommentsView.swift in Sources */,
 				9A015EC327961CED00F97DCE /* ProfileHeadingView.swift in Sources */,
@@ -290,20 +303,23 @@
 				9AD23F352796218C0006352B /* Profile.swift in Sources */,
 				9AD23F432796EEC10006352B /* CommentListView.swift in Sources */,
 				9A015EAC2795E4BB00F97DCE /* RankingView.swift in Sources */,
+				9AD23F4F27975BE70006352B /* ExpandedMainFeedRankingView.swift in Sources */,
+				9AD23F4727974D150006352B /* CreatePostView.swift in Sources */,
 				9AD23F33279620D50006352B /* ProfileRankingFooterView.swift in Sources */,
 				9A015EAE2795E52200F97DCE /* RankingHeaderView.swift in Sources */,
 				9A015EB02795E53500F97DCE /* RankingImagesView.swift in Sources */,
 				9AD23F45279709D40006352B /* Comment.swift in Sources */,
-				9A015E9C2795D94A00F97DCE /* SettingsView.swift in Sources */,
 				9A015EBA2795F32F00F97DCE /* OtherUsersCircleView.swift in Sources */,
 				9AD23F31279620CB0006352B /* ProfileRankingImageView.swift in Sources */,
 				9AD23F39279630A10006352B /* Constant.swift in Sources */,
 				9A015EA02795D95E00F97DCE /* ProfileView.swift in Sources */,
+				9AD23F4D27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift in Sources */,
 				9A015EB42795E99E00F97DCE /* Rankable.swift in Sources */,
 				9A015E862795D87600F97DCE /* ListsApp.swift in Sources */,
 				9AD23F2D2796206E0006352B /* ProfileRankingView.swift in Sources */,
 				9A015EC12795FF4A00F97DCE /* CodableBundleExtension.swift in Sources */,
 				9A015EA42795D96C00F97DCE /* DiscoverView.swift in Sources */,
+				9AD23F4B27975B6F0006352B /* MainFeedRankingView.swift in Sources */,
 				9A015EBE2795FDA800F97DCE /* Post.swift in Sources */,
 				9A015EA22795D96500F97DCE /* FeedView.swift in Sources */,
 				9AD23F2F279620B90006352B /* ProfileRankingHeaderView.swift in Sources */,

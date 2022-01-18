@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ProfileRankingHeaderView: View {
+    // MARK: - PROPERTIES
     let image: String
     let username: String
     
+    // MARK: - BODY
     var body: some View {
         HStack {
             Image(image)
@@ -23,7 +25,7 @@ struct ProfileRankingHeaderView: View {
             Text("\(username) ranked...")
                 .font(.system(size: 12))
                 .foregroundColor(.white)
-        }
+        } //: HSTACK
     }
 }
 

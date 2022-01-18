@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct FeedView: View {
+    // MARK: - PROPERTIES
     let profiles: [Profile] = Bundle.main.decode("profiles.json")
+    @Binding var displayHeader: Bool
     
+    // MARK: - BODY
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             ForEach(profiles) { profile in
-                RankingView(image: profile.image, username: profile.id, post: profile.posts[0], profile: false, discover: false)
-                    .padding(.horizontal, 5)
-            }
-            
-        }
+                ForEach(profile.posts) { post in
+                    RankingView(user: profile, image: profile.image, username: profile.id, post: post, profile: false, discover: false, displayHeader: $displayHeader)
+                        .padding(.horizontal, 5)
+                } //: LOOP
+            } //: LOOP
+        } //: SCROLL
     }
 }
 
 struct FeedView_Previews: PreviewProvider {
+    @State static var displayHeader: Bool = true
     static var previews: some View {
-        FeedView()
+        FeedView(displayHeader: $displayHeader)
     }
 }

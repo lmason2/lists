@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct RankingFooterView: View {
+    // MARK: - PROPERTIES
     let comments: [Comment]
     let associations: [String]
     @Binding var expandComment: Bool
+    @Binding var expandPost: Bool
+    
+    // MARK: - BODY
     var body: some View {
         HStack {
-            Image(systemName: "square.stack.3d.up")
-                .foregroundColor(.white)
-                .font(.system(size: 25))
+            Button(action: {
+                print("expanding")
+                withAnimation {
+                    expandPost.toggle()
+                }
+            }, label: {
+                Image(systemName: "square.stack.3d.up")
+                    .foregroundColor(.white)
+                    .font(.system(size: 25))
+            }) //: BUTTON
+            
             
             Button(action: {
                 withAnimation {
@@ -32,7 +44,7 @@ struct RankingFooterView: View {
                         .font(.system(size: 15, weight: .semibold, design: .rounded))
                         .offset(y: -2)
                 }
-            })
+            }) //: BUTTON
             Spacer()
             OtherUsersCircleView(associations: associations)
         }
@@ -49,7 +61,8 @@ struct RankingFooterView_Previews: PreviewProvider {
     ]
     static let associations = ["Luke-main", "Yacine-main", "Ben-main"]
     @State static var expandComments: Bool = false
+    @State static var expandPost: Bool = false
     static var previews: some View {
-        RankingFooterView(comments: comments, associations: associations, expandComment: $expandComments)
+        RankingFooterView(comments: comments, associations: associations, expandComment: $expandComments, expandPost: $expandPost)
     }
 }

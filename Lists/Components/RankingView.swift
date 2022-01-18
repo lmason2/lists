@@ -8,76 +8,43 @@
 import SwiftUI
 
 struct RankingView: View {
+    // MARK: - PROPERTIES
+    let user: Profile
     let image: String
     let username: String
     let post: Post
     let profile: Bool
     let discover: Bool
     @State var commentsOpen: Bool = false
+    @Binding var displayHeader: Bool
+    @State var postExpanded: Bool = false
     let users: [Profile] = Bundle.main.decode("profiles.json")
     
+    // MARK: - BODY
     var body: some View {
         if discover {
-            VStack {
-                // Profile and Tags
-                RankingHeaderView(image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false)
-                
-                // Ranking images
-                RankingImagesView(rankable: post.ranking)
-                
-                if commentsOpen {
-                    // Footer comments and users
-                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
-                    CommentsView(comments: post.comments, profiles: users)
-                }
-                
-                else {
-                    // Footer comments and users
-                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
-                }
+            if postExpanded {
+                ExpandedMainDiscoverRankingView(user: user, image: image, username: username, post: post, profile: profile, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded)
             }
-            .transition(.scale)
-            .padding(.horizontal, 10)
-            .padding(.vertical, 3)
-            .background(
-                Color.white.frame(width: 3).offset(x: (-(UIScreen.main.bounds.width/2) + 30))
-            )
-            .cornerRadius(5)
+            else {
+                MainDiscoverRankingView(user: user, image: image, username: username, post: post, profile: profile, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded)
+            }
         }
         else {
-            VStack {
-                // Profile and Tags
-                RankingHeaderView(image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false)
-                
-                // Ranking images
-                RankingImagesView(rankable: post.ranking)
-                
-                if commentsOpen {
-                    // Footer comments and users
-                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
-                    CommentsView(comments: post.comments, profiles: users)
-                }
-                
-                else {
-                    // Footer comments and users
-                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen)
-                }
+            if postExpanded {
+                ExpandedMainFeedRankingView(user: user, image: image, username: username, post: post, profile: profile, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded)
             }
-            .transition(.scale)
-            .padding(.horizontal, 10)
-            .padding(.vertical, 3)
-            .background(
-                getGradient(type: post.type)
-            )
-            .cornerRadius(5)
+            else {
+                MainFeedRankingView(user: user, image: image, username: username, post: post, profile: profile, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded)
+            }
         }
     }
 }
 
 struct RankingView_Previews: PreviewProvider {
     static let users: [Profile] = Bundle.main.decode("profile.json")
-    
+    @State static var displayHeader: Bool = true
     static var previews: some View {
-        RankingView(image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, discover: true)
+        RankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, discover: true, displayHeader: $displayHeader)
     }
 }

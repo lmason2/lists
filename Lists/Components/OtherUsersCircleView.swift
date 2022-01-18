@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct OtherUsersCircleView: View {
+    // MARK: - PROPERTIES
     let associations: [String]
     @State private var offset: CGFloat = -20
     
+    // MARK: - FUNCTIONS
     func changeOffset(index: Int) -> CGFloat {
         return CGFloat((index + 1)) * offset
     }
+    
+    // MARK: - BODY
     var body: some View {
         HStack (spacing: 0){
             ZStack {
@@ -29,13 +33,13 @@ struct OtherUsersCircleView: View {
                         .clipShape(Circle())
                         .overlay(Circle().stroke(.white, lineWidth: 1))
                         .offset(x: changeOffset(index: index))
-                }
-            }
+                } //: LOOP
+            } //: ZSTACK
             
             Text("+ 18 more")
                 .foregroundColor(.white)
                 .font(.system(size: 8, weight: .light, design: .rounded))
-        }
+        } //: HSTACK
     }
 }
 

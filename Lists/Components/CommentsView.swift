@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct CommentsView: View {
+    // MARK: - PROPERTIES
     let comments: [Comment]
     let profiles: [Profile]
+    
+    // MARK: - BODY
     var body: some View {
-        VStack (alignment: .leading) {
+        ScrollView(.vertical, showsIndicators: true) {
             ForEach(comments) { comment in
                 Divider()
+                    .padding(.trailing, 10)
                 CommentListView(comment: comment, profile: profiles.first(where: { $0.id == comment.username })!)
-            }
-        }
-        .frame(maxWidth: 680)
+            } //: LOOP
+        } //: SCROLL
+        .frame(maxWidth: 680, maxHeight: 200)
         .padding(.bottom, 5)
     }
 }

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ProfileRankingFooterView: View {
+    // MARK: - PROPERTIES
     let comments: [Comment]
     let associations: [String]
     @Binding var expandComment: Bool
     
+    // MARK: - BODY
     var body: some View {
         HStack {
             Button(action: {
@@ -27,11 +29,11 @@ struct ProfileRankingFooterView: View {
                         .font(.system(size: 15, weight: .semibold, design: .rounded))
                         .offset(y: -2)
                 }
-            })
+            }) //: BODY
             Spacer()
             
             OtherUsersCircleView(associations: associations)
-        }
+        } //: HSTACK
     }
 }
 

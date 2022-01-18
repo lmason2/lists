@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct RankableSingleImageView: View {
+    // MARK: - PROPERTIES
     let data: Rankable
+    
+    // MARK: - BODY
     var body: some View {
         VStack(spacing: 3) {
             Image(data.image)
@@ -30,15 +33,16 @@ struct RankableSingleImageView: View {
                     .font(.system(size: 6, weight: .light, design: .rounded))
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: UIScreen.main.bounds.width * 0.17)
-            }
+            } //: CONDITIONAL
+            
             if let tertiary = data.tertiary {
                 Text(tertiary)
                     .foregroundColor(.white)
                     .font(.system(size: 6, weight: .light, design: .rounded))
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: UIScreen.main.bounds.width * 0.17)
-            }
-        }
+            } //: CONDITIONAL
+        } //: VSTACK
     }
 }
 

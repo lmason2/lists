@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LikeCounter: View {
+    // MARK: - PROPERTIES
+    
+    // MARK: - BODY
     var body: some View {
         VStack {
             Image(systemName: "arrowtriangle.up")
@@ -24,7 +27,7 @@ struct LikeCounter: View {
                 .font(.system(size: 30))
                 .foregroundColor(.white)
                 .padding(.top, 2)
-        }
+        } //: VSTACK
     }
 }
 
