@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Profile: Codable, Identifiable {
+class Profile: Codable, Identifiable {
     let id: String
     let name: String
     let image: String

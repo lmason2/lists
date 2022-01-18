@@ -11,6 +11,8 @@ struct HeaderView: View {
     // MARK: - PROPERTIES
     let title: String
     let image: String
+    let feed: Bool
+    @Binding var feedExpanded: Bool
     
     // MARK: - BODY
     var body: some View {
@@ -30,8 +32,19 @@ struct HeaderView: View {
                 LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.3), Color.pink.opacity(0.3)]), startPoint: .topLeading, endPoint: .topTrailing)
             )
             
-            HStack {
+            HStack(spacing: 0) {
                 Spacer()
+                if feed {
+                    Button(action: {
+                        withAnimation {
+                            feedExpanded.toggle()
+                        }
+                    }, label: {
+                        Image(systemName: feedExpanded ? "chevron.down.square" : "chevron.forward.square")
+                            .foregroundColor(.white)
+                    })
+                }
+                
                 Image(systemName: "slider.horizontal.3")
                     .foregroundColor(.white)
                     .padding()
@@ -41,7 +54,8 @@ struct HeaderView: View {
 }
 
 struct HeaderView_Previews: PreviewProvider {
+    @State static var feedExpanded: Bool = true
     static var previews: some View {
-        HeaderView(title: "Feed", image: "bolt")
+        HeaderView(title: "Feed", image: "bolt", feed: true, feedExpanded: $feedExpanded)
     }
 }

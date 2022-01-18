@@ -67,6 +67,7 @@ struct RankingHeaderView_Previews: PreviewProvider {
     static let username = "bhogan9"
     static let tags = ["Favorite", "Albums", "All Time"]
     @State static var displayHeader: Bool = true
+    @State static var postExpanded: Bool = false
     static var previews: some View {
         RankingHeaderView(profile: profiles[0], image: image, username: username, tags: tags, pinned: true, displayHeader: $displayHeader)
             .previewLayout(.sizeThatFits)

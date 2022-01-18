@@ -14,12 +14,14 @@ struct DiscoverRankingView: View {
     let username: String
     let post: Post
     @Binding var displayHeader: Bool
+    @Binding var postExpanded: Bool
+    @Binding var feedExpanded: Bool
     
     // MARK: - BODY
     var body: some View {
         HStack(spacing: 0) {
             LikeCounter()
-            RankingView(user: profile, image: image, username: username, post: post, profile: false, discover: true, displayHeader: $displayHeader)
+            RankingView(user: profile, image: image, username: username, post: post, profile: false, discover: true, displayHeader: $displayHeader, postExpanded: $postExpanded, feedExpanded: $feedExpanded)
         } //: HSTACK
         .background(
             getGradient(type: post.type)
@@ -31,7 +33,9 @@ struct DiscoverRankingView: View {
 struct DiscoverRankingView_Previews: PreviewProvider {
     static let discoverUsers: [Profile] = Bundle.main.decode("discover.json")
     @State static var displayHeader: Bool = true
+    @State static var postExpanded: Bool = true
+    @State static var feedExpanded: Bool = true
     static var previews: some View {
-        DiscoverRankingView(profile: discoverUsers[0], image: discoverUsers[0].image, username: discoverUsers[0].id, post: discoverUsers[0].posts[0], displayHeader: $displayHeader)
+        DiscoverRankingView(profile: discoverUsers[0], image: discoverUsers[0].image, username: discoverUsers[0].id, post: discoverUsers[0].posts[0], displayHeader: $displayHeader, postExpanded: $postExpanded, feedExpanded: $feedExpanded)
     }
 }

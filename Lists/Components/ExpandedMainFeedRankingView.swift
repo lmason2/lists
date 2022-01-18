@@ -14,10 +14,9 @@ struct ExpandedMainFeedRankingView: View {
     let username: String
     let post: Post
     let profile: Bool
-    @Binding var commentsOpen: Bool
     @Binding var displayHeader: Bool
-    @Binding var postExpanded: Bool
-    let users: [Profile] = Bundle.main.decode("profiles.json")
+    @Binding var expand: Bool
+    @Binding var feedExpanded: Bool
     
     // MARK: - BODY
     var body: some View {
@@ -25,22 +24,12 @@ struct ExpandedMainFeedRankingView: View {
             // Profile and Tags
             RankingHeaderView(profile: user, image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false, displayHeader: $displayHeader)
             
-            // Ranking images
-            RankingImagesView(rankable: post.ranking, discover: false)
-            
-            if commentsOpen {
-                // Footer comments and users
-                RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $postExpanded)
-                CommentsView(comments: post.comments, profiles: users)
+            if feedExpanded {
+                Text("Testing")
             }
             
-            else {
-                // Footer comments and users
-                RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $postExpanded)
-            }
         } //: VSTACK
         .transition(.scale)
-        .frame(height: UIScreen.main.bounds.height - 155)
         .padding(.horizontal, 10)
         .padding(.vertical, 3)
         .background(
@@ -53,9 +42,9 @@ struct ExpandedMainFeedRankingView: View {
 struct ExpandedMainFeedRankingView_Previews: PreviewProvider {
     static let users: [Profile] = Bundle.main.decode("profile.json")
     @State static var displayHeader: Bool = true
-    @State static var commentsOpen: Bool = false
-    @State static var postExpanded: Bool = false
+    @State static var expand: Bool = false
+    @State static var feedExpanded: Bool = true
     static var previews: some View {
-        ExpandedMainFeedRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded)
+        ExpandedMainFeedRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, displayHeader: $displayHeader, expand: $expand, feedExpanded: $feedExpanded)
     }
 }

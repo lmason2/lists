@@ -13,14 +13,15 @@ struct RankingFooterView: View {
     let associations: [String]
     @Binding var expandComment: Bool
     @Binding var expandPost: Bool
+    @Binding var expand: Bool
     
     // MARK: - BODY
     var body: some View {
         HStack {
             Button(action: {
-                print("expanding")
                 withAnimation {
                     expandPost.toggle()
+                    expand.toggle()
                 }
             }, label: {
                 Image(systemName: "square.stack.3d.up")
@@ -62,7 +63,8 @@ struct RankingFooterView_Previews: PreviewProvider {
     static let associations = ["Luke-main", "Yacine-main", "Ben-main"]
     @State static var expandComments: Bool = false
     @State static var expandPost: Bool = false
+    @State static var expand: Bool = false
     static var previews: some View {
-        RankingFooterView(comments: comments, associations: associations, expandComment: $expandComments, expandPost: $expandPost)
+        RankingFooterView(comments: comments, associations: associations, expandComment: $expandComments, expandPost: $expandPost, expand: $expand)
     }
 }

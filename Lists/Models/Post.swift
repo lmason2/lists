@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Post: Codable, Identifiable {
+class Post: Codable, Identifiable, ObservableObject{
     let id = UUID()
     let typeString: String
     let tags: [String]

@@ -12,13 +12,14 @@ struct ContentView: View {
     let profiles: [Profile] = Bundle.main.decode("profiles.json")
     let discoverUsers: [Profile] = Bundle.main.decode("discover.json")
     @State var displayHeader: Bool = true
+    @State var feedExpanded: Bool = true
     
     // MARK: - BODY
     var body: some View {
         TabView {
             VStack {
                 if displayHeader {
-                    HeaderView(title: "Settings", image: "gearshape")
+                    HeaderView(title: "Settings", image: "gearshape", feed: false, feedExpanded: $feedExpanded)
                 }
                 CreatePostView()
                 Spacer()
@@ -50,10 +51,10 @@ struct ContentView: View {
             NavigationView {
                 VStack {
                     if displayHeader {
-                        HeaderView(title: "Feed", image: "bolt")
+                        HeaderView(title: "Feed", image: "bolt", feed: true, feedExpanded: $feedExpanded)
                     } //: CONDITIONAL
                     
-                    FeedView(displayHeader: $displayHeader)
+                    FeedView(displayHeader: $displayHeader, feedExpanded: $feedExpanded)
                         .onAppear(perform: {
                             displayHeader = true
                         })
@@ -76,10 +77,10 @@ struct ContentView: View {
             
             VStack {
                 if displayHeader {
-                    HeaderView(title: "Discover", image: "globe")
+                    HeaderView(title: "Discover", image: "globe", feed: false, feedExpanded: $feedExpanded)
                 } //: CONDITIONAL
                 
-                DiscoverView(discoverProfiles: discoverUsers, displayHeader: $displayHeader)
+                DiscoverView(discoverProfiles: discoverUsers, displayHeader: $displayHeader, feedExpanded: $feedExpanded)
                     .onAppear(perform: {
                         displayHeader = true
                     })

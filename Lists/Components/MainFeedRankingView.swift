@@ -17,6 +17,9 @@ struct MainFeedRankingView: View {
     @Binding var commentsOpen: Bool
     @Binding var displayHeader: Bool
     @Binding var postExpanded: Bool
+    @Binding var expand: Bool
+    @Binding var feedExpanded: Bool
+    
     let users: [Profile] = Bundle.main.decode("profiles.json")
     
     // MARK: - BODY
@@ -25,18 +28,20 @@ struct MainFeedRankingView: View {
             // Profile and Tags
             RankingHeaderView(profile: user, image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false, displayHeader: $displayHeader)
             
-            // Ranking images
-            RankingImagesView(rankable: post.ranking, discover: false)
-            
-            if commentsOpen {
-                // Footer comments and users
-                RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $postExpanded)
-                CommentsView(comments: post.comments, profiles: users)
-            }
-            
-            else {
-                // Footer comments and users
-                RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $postExpanded)
+            if feedExpanded {
+                // Ranking images
+                RankingImagesView(rankable: post.ranking, discover: false)
+                
+                if commentsOpen {
+                    // Footer comments and users
+                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $postExpanded, expand: $expand)
+                    CommentsView(comments: post.comments, profiles: users)
+                }
+                
+                else {
+                    // Footer comments and users
+                    RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $postExpanded, expand: $expand)
+                }
             }
         } //: VSTACK
         .transition(.scale)
@@ -54,7 +59,9 @@ struct MainFeedRankingView_Previews: PreviewProvider {
     @State static var displayHeader: Bool = true
     @State static var commentsOpen: Bool = false
     @State static var postExpanded: Bool = false
+    @State static var expand: Bool = false
+    @State static var feedExpanded: Bool = true
     static var previews: some View {
-        MainFeedRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded)
+        MainFeedRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded, expand: $expand, feedExpanded: $feedExpanded)
     }
 }
