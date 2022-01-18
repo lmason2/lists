@@ -19,7 +19,7 @@ struct ProfileView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 if pinned.count != 0 {
                     ForEach(pinned) { post in 
-                        RankingView(image: profile.image, username: profile.id, post: post, profile: true)
+                        RankingView(image: profile.image, username: profile.id, post: post, profile: true, discover: false)
                             .padding(.horizontal, 3)
                     }
                 }

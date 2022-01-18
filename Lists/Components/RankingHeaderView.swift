@@ -17,7 +17,7 @@ struct RankingHeaderView: View {
         HStack {
             Image(image)
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
                 .clipShape(Circle())
                 .overlay(Circle().stroke(.white, lineWidth: 2))
                 .frame(width: 30, height: 30)

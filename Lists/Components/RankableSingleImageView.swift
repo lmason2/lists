@@ -22,18 +22,21 @@ struct RankableSingleImageView: View {
                 .foregroundColor(.white)
                 .font(.system(size: 8, weight: .semibold, design: .rounded))
                 .multilineTextAlignment(.center)
+                .frame(maxWidth: UIScreen.main.bounds.width * 0.17)
             
             if let secondary = data.secondary {
                 Text(secondary)
                     .foregroundColor(.white)
                     .font(.system(size: 6, weight: .light, design: .rounded))
                     .multilineTextAlignment(.center)
+                    .frame(maxWidth: UIScreen.main.bounds.width * 0.17)
             }
             if let tertiary = data.tertiary {
                 Text(tertiary)
                     .foregroundColor(.white)
                     .font(.system(size: 6, weight: .light, design: .rounded))
                     .multilineTextAlignment(.center)
+                    .frame(maxWidth: UIScreen.main.bounds.width * 0.17)
             }
         }
     }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     let profiles: [Profile] = Bundle.main.decode("profiles.json")
+    let discoverUsers: [Profile] = Bundle.main.decode("discover.json")
 
     var body: some View {
             TabView {
@@ -58,7 +59,7 @@ struct ContentView: View {
                 
                 VStack {
                     HeaderView(title: "Discover", image: "globe")
-                    DiscoverView()
+                    DiscoverView(discoverProfiles: discoverUsers)
                     Spacer()
                     Rectangle()
                         .fill(Color.clear)

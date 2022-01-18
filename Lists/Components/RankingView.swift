@@ -12,27 +12,45 @@ struct RankingView: View {
     let username: String
     let post: Post
     let profile: Bool
+    let discover: Bool
     
     var body: some View {
-        VStack {
-            // Profile and Tags
-            RankingHeaderView(image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false)
-            
-            // Ranking images
-            RankingImagesView(rankable: post.ranking)
-            
-            // Footer comments and users
-            RankingFooterView(comments: post.comments, associations: post.associations)
+        if discover {
+            VStack {
+                // Profile and Tags
+                RankingHeaderView(image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false)
+                
+                // Ranking images
+                RankingImagesView(rankable: post.ranking)
+                
+                // Footer comments and users
+                RankingFooterView(comments: post.comments, associations: post.associations)
+            }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 3)
+            .background(
+                Color.white.frame(width: 3).offset(x: (-(UIScreen.main.bounds.width/2) + 30))
+            )
+            .cornerRadius(5)
         }
-        .padding(.horizontal, 10)
-        .padding(.vertical, 3)
-        .background(
-            (post.type == .music) ? LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.7), Color.red.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing) :
-                (post.type == .movie) ? LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.7), Color.pink.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing) :
-                (post.type == .food) ? LinearGradient(gradient: Gradient(colors: [Color.yellow.opacity(0.5), Color.orange.opacity(1)]), startPoint: .topLeading, endPoint: .bottomTrailing) :
-                LinearGradient(gradient: Gradient(colors: [Color.gray.opacity(0.7), Color.blue.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-        )
-        .cornerRadius(5)
+        else {
+            VStack {
+                // Profile and Tags
+                RankingHeaderView(image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false)
+                
+                // Ranking images
+                RankingImagesView(rankable: post.ranking)
+                
+                // Footer comments and users
+                RankingFooterView(comments: post.comments, associations: post.associations)
+            }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 3)
+            .background(
+                getGradient(type: post.type)
+            )
+            .cornerRadius(5)
+        }
     }
 }
 
@@ -40,6 +58,6 @@ struct RankingView_Previews: PreviewProvider {
     static let users: [Profile] = Bundle.main.decode("profile.json")
     
     static var previews: some View {
-        RankingView(image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false)
+        RankingView(image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, discover: true)
     }
 }

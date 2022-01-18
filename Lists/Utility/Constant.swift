@@ -10,7 +10,7 @@ import SwiftUI
 func getGradient(type: type) -> LinearGradient {
     switch type {
         case .music:
-            return LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.7), Color.red.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            return LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.3), Color.red.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
         case .movie:
             return LinearGradient(gradient: Gradient(colors: [Color.purple.opacity(0.7), Color.pink.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
         case .food:

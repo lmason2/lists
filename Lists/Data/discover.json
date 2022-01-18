@@ -1,0 +1,108 @@
+[
+    {
+        "id": "ComplexMag",
+        "name": "Complex Magazine",
+        "image": "complex",
+        "posts": [
+            {
+                "typeString": "music",
+                "tags": ["Favorite", "Albums", "All Time"],
+                "ranking": [
+                    {
+                        "image": "keem",
+                        "basicInfo": "The Melodic Blue",
+                        "secondary": "Baby Keem",
+                        "tertiary": "2021"
+                    },
+                    {
+                        "image": "donda",
+                        "basicInfo": "Donda",
+                        "secondary": "Kanye West",
+                        "tertiary": "2021"
+                    },
+                    {
+                        "image": "tyler",
+                        "basicInfo": "Call Me If You Get Lost",
+                        "secondary": "Tyler, the Creator",
+                        "tertiary": "2021"
+                    }
+                ],
+                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            }
+        ],
+        "following": ["bhogan9", "sam_mccloughan", "lukemason11"]
+    },
+    {
+        "id": "StephenASmith",
+        "name": "Stephen A. Smith",
+        "image": "stephen",
+        "posts": [
+            {
+                "typeString": "sports",
+                "tags": ["Best", "NBA", "Games", "2021"],
+                "ranking": [
+                    {
+                        "image": "trae",
+                        "basicInfo": "Trae Young",
+                        "secondary": "@Portland",
+                        "tertiary": "1/3/21"
+                    },
+                    {
+                        "image": "steph",
+                        "basicInfo": "Stef Curry",
+                        "secondary": "vs. Atlanta",
+                        "tertiary": "11/8/21"
+                    },
+                    {
+                        "image": "kd",
+                        "basicInfo": "Kevin Durant",
+                        "secondary": "@Detroit",
+                        "tertiary": "12/12/21"
+                    }
+                ],
+                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            }
+        ],
+        "following": ["bhogan9", "sam_mccloughan", "lukemason11"]
+    },
+    {
+        "id": "Letterboxd",
+        "name": "Letterboxd",
+        "image": "letter",
+        "posts": [
+            {
+                "typeString": "movie",
+                "tags": ["Best", "Wes Anderson", "Movies"],
+                "ranking": [
+                    {
+                        "image": "isle",
+                        "basicInfo": "Isle of Dogs",
+                        "secondary": "Wes Anderson",
+                        "tertiary": "2018"
+                    },
+                    {
+                        "image": "hotel",
+                        "basicInfo": "The Grand Buddapest Hotel",
+                        "secondary": "Wes Anderson",
+                        "tertiary": "2014"
+                    },
+                    {
+                        "image": "dispatch",
+                        "basicInfo": "The French Dispatch",
+                        "secondary": "Wes Anderson",
+                        "tertiary": "2021"
+                    }
+                ],
+                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            }
+        ],
+        "following": ["bhogan9", "sam_mccloughan", "lukemason11"]
+    }
+
+]

@@ -34,6 +34,9 @@
 		9AD23F352796218C0006352B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F342796218C0006352B /* Profile.swift */; };
 		9AD23F37279621D90006352B /* profiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD23F36279621D90006352B /* profiles.json */; };
 		9AD23F39279630A10006352B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F38279630A10006352B /* Constant.swift */; };
+		9AD23F3B2796414D0006352B /* DiscoverRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F3A2796414D0006352B /* DiscoverRankingView.swift */; };
+		9AD23F3D279642A10006352B /* discover.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD23F3C279642A10006352B /* discover.json */; };
+		9AD23F3F279645220006352B /* LikeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F3E279645220006352B /* LikeCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		9AD23F342796218C0006352B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9AD23F36279621D90006352B /* profiles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profiles.json; sourceTree = "<group>"; };
 		9AD23F38279630A10006352B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9AD23F3A2796414D0006352B /* DiscoverRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRankingView.swift; sourceTree = "<group>"; };
+		9AD23F3C279642A10006352B /* discover.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = discover.json; sourceTree = "<group>"; };
+		9AD23F3E279645220006352B /* LikeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				9AD23F36279621D90006352B /* profiles.json */,
+				9AD23F3C279642A10006352B /* discover.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -180,6 +187,8 @@
 				9AD23F2E279620B90006352B /* ProfileRankingHeaderView.swift */,
 				9AD23F30279620CB0006352B /* ProfileRankingImageView.swift */,
 				9AD23F32279620D50006352B /* ProfileRankingFooterView.swift */,
+				9AD23F3A2796414D0006352B /* DiscoverRankingView.swift */,
+				9AD23F3E279645220006352B /* LikeCounter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD23F3D279642A10006352B /* discover.json in Resources */,
 				9AD23F37279621D90006352B /* profiles.json in Resources */,
 				9A015E8D2795D87900F97DCE /* Preview Assets.xcassets in Resources */,
 				9A015E8A2795D87900F97DCE /* Assets.xcassets in Resources */,
@@ -263,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD23F3B2796414D0006352B /* DiscoverRankingView.swift in Sources */,
 				9A015EB62795EA3D00F97DCE /* RankableSingleImageView.swift in Sources */,
 				9A015EC327961CED00F97DCE /* ProfileHeadingView.swift in Sources */,
 				9A015E882795D87600F97DCE /* ContentView.swift in Sources */,
@@ -287,6 +298,7 @@
 				9A015E992795D8EB00F97DCE /* AuthenticationView.swift in Sources */,
 				9A015EB22795E53E00F97DCE /* RankingFooterView.swift in Sources */,
 				9A015EA82795E0CB00F97DCE /* HeaderView.swift in Sources */,
+				9AD23F3F279645220006352B /* LikeCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

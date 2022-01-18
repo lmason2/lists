@@ -61,8 +61,8 @@
                 "tags": ["Most", "Difficult", "Sports"],
                 "ranking": [
                     {
-                        "image": "biathalon",
-                        "basicInfo": "Bi-Athalon",
+                        "image": "biathlon",
+                        "basicInfo": "Biathlon",
                     }
                 ],
                 "comments": ["Fire", "Swap first two", "Agreed"],
@@ -74,7 +74,7 @@
                 "tags": ["Best", "Black Mirror", "Episodes"],
                 "ranking": [
                     {
-                        "image": "blackmirror",
+                        "image": "history",
                         "basicInfo": "Play Test",
                     }
                 ],
@@ -224,5 +224,4 @@
         ],
         "following": ["bhogan9", "sam_mccloughan", "lukemason11"]
     }
-
 ]

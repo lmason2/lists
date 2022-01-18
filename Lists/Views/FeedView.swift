@@ -13,7 +13,7 @@ struct FeedView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             ForEach(profiles) { profile in
-                RankingView(image: profile.image, username: profile.id, post: profile.posts[0], profile: false)
+                RankingView(image: profile.image, username: profile.id, post: profile.posts[0], profile: false, discover: false)
                     .padding(.horizontal, 5)
             }
             
