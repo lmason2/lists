@@ -12,7 +12,9 @@ struct HeaderView: View {
     let title: String
     let image: String
     let feed: Bool
+    let discover: Bool
     @Binding var feedExpanded: Bool
+    @Binding var discoverExpanded: Bool
     
     // MARK: - BODY
     var body: some View {
@@ -34,10 +36,15 @@ struct HeaderView: View {
             
             HStack(spacing: 0) {
                 Spacer()
-                if feed {
+                if feed || discover {
                     Button(action: {
                         withAnimation {
-                            feedExpanded.toggle()
+                            if feed {
+                                feedExpanded.toggle()
+                            }
+                            else {
+                                discoverExpanded.toggle()
+                            }
                         }
                     }, label: {
                         Image(systemName: feedExpanded ? "chevron.down.square" : "chevron.forward.square")
@@ -55,7 +62,8 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     @State static var feedExpanded: Bool = true
+    @State static var discoverExpanded: Bool = true
     static var previews: some View {
-        HeaderView(title: "Feed", image: "bolt", feed: true, feedExpanded: $feedExpanded)
+        HeaderView(title: "Feed", image: "bolt", feed: true, discover: false, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
     }
 }

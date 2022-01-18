@@ -19,6 +19,7 @@ struct MainFeedRankingView: View {
     @Binding var postExpanded: Bool
     @Binding var expand: Bool
     @Binding var feedExpanded: Bool
+    @State var expanded: Bool = true
     
     let users: [Profile] = Bundle.main.decode("profiles.json")
     
@@ -26,16 +27,16 @@ struct MainFeedRankingView: View {
     var body: some View {
         VStack {
             // Profile and Tags
-            RankingHeaderView(profile: user, image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false, displayHeader: $displayHeader)
+            RankingHeaderView(profile: user, image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false, displayHeader: $displayHeader, expanded: $expanded, feedExpanded: $feedExpanded)
             
-            if feedExpanded {
+            if feedExpanded && expanded {
                 // Ranking images
                 RankingImagesView(rankable: post.ranking, discover: false)
                 
                 if commentsOpen {
                     // Footer comments and users
                     RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $postExpanded, expand: $expand)
-                    CommentsView(comments: post.comments, profiles: users)
+                    CommentsView(comments: post.comments, profiles: users, expanded: false)
                 }
                 
                 else {

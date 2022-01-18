@@ -44,6 +44,8 @@
 		9AD23F4B27975B6F0006352B /* MainFeedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */; };
 		9AD23F4D27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */; };
 		9AD23F4F27975BE70006352B /* ExpandedMainFeedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */; };
+		9AD23F51279779660006352B /* ExpandedRankingImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F50279779660006352B /* ExpandedRankingImagesView.swift */; };
+		9AD23F5327977D960006352B /* ExpandedRankingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F5227977D960006352B /* ExpandedRankingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedRankingView.swift; sourceTree = "<group>"; };
 		9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedMainDiscoverRankingView.swift; sourceTree = "<group>"; };
 		9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedMainFeedRankingView.swift; sourceTree = "<group>"; };
+		9AD23F50279779660006352B /* ExpandedRankingImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedRankingImagesView.swift; sourceTree = "<group>"; };
+		9AD23F5227977D960006352B /* ExpandedRankingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedRankingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,8 @@
 				9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */,
 				9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */,
 				9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */,
+				9AD23F50279779660006352B /* ExpandedRankingImagesView.swift */,
+				9AD23F5227977D960006352B /* ExpandedRankingFooterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -304,9 +310,11 @@
 				9AD23F432796EEC10006352B /* CommentListView.swift in Sources */,
 				9A015EAC2795E4BB00F97DCE /* RankingView.swift in Sources */,
 				9AD23F4F27975BE70006352B /* ExpandedMainFeedRankingView.swift in Sources */,
+				9AD23F51279779660006352B /* ExpandedRankingImagesView.swift in Sources */,
 				9AD23F4727974D150006352B /* CreatePostView.swift in Sources */,
 				9AD23F33279620D50006352B /* ProfileRankingFooterView.swift in Sources */,
 				9A015EAE2795E52200F97DCE /* RankingHeaderView.swift in Sources */,
+				9AD23F5327977D960006352B /* ExpandedRankingFooterView.swift in Sources */,
 				9A015EB02795E53500F97DCE /* RankingImagesView.swift in Sources */,
 				9AD23F45279709D40006352B /* Comment.swift in Sources */,
 				9A015EBA2795F32F00F97DCE /* OtherUsersCircleView.swift in Sources */,

@@ -11,7 +11,9 @@ struct CommentListView: View {
     // MARK: - PROPERTIES
     let comment: Comment
     let profile: Profile
+    let expanded: Bool
     @State private var liked: Bool = false
+    @State private var reply: Bool = false
     
     // MARK: - BODY
     var body: some View {
@@ -25,6 +27,12 @@ struct CommentListView: View {
                 .foregroundColor(.black)
                 .font(.system(size: 15, weight: .medium, design: .rounded))
             Spacer()
+            if expanded {
+                Image(systemName: "arrowshape.turn.up.left")
+                    .onTapGesture {
+                        reply = true
+                    } //: GESTURE
+            }
             Image(systemName: liked ? "hand.thumbsup.fill" : "hand.thumbsup")
                 .onTapGesture {
                     liked.toggle()
@@ -38,6 +46,6 @@ struct CommentListView_Previews: PreviewProvider {
     static let comment: Comment = Comment(username: "lukemason11", content: "Fire")
     static let profiles: [Profile] = Bundle.main.decode("profiles.json")
     static var previews: some View {
-        CommentListView(comment: comment, profile: profiles[0])
+        CommentListView(comment: comment, profile: profiles[0], expanded: false)
     }
 }

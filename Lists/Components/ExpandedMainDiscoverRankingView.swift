@@ -17,7 +17,7 @@ struct ExpandedMainDiscoverRankingView: View {
     @Binding var displayHeader: Bool
     @Binding var postExpanded: Bool
     @Binding var expand: Bool
-    @Binding var feedExpanded: Bool
+    @Binding var discoverExpanded: Bool
     let users: [Profile] = Bundle.main.decode("profiles.json")
     
     // MARK: - BODY
@@ -31,8 +31,8 @@ struct ExpandedMainDiscoverRankingView_Previews: PreviewProvider {
     @State static var displayHeader: Bool = true
     @State static var postExpanded: Bool = true
     @State static var expand: Bool = false
-    @State static var feedExpanded: Bool = true
+    @State static var discoverExpanded: Bool = true
     static var previews: some View {
-        ExpandedMainDiscoverRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, displayHeader: $displayHeader, postExpanded: $postExpanded, expand: $expand, feedExpanded: $feedExpanded)
+        ExpandedMainDiscoverRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, displayHeader: $displayHeader, postExpanded: $postExpanded, expand: $expand, discoverExpanded: $discoverExpanded)
     }
 }

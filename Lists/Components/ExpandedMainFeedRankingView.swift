@@ -17,15 +17,24 @@ struct ExpandedMainFeedRankingView: View {
     @Binding var displayHeader: Bool
     @Binding var expand: Bool
     @Binding var feedExpanded: Bool
+    @Binding var expandPost: Bool
+    @Binding var commentsOpen: Bool
+    @State var expanded: Bool = true
+    
+    let profiles: [Profile] = Bundle.main.decode("profiles.json")
     
     // MARK: - BODY
     var body: some View {
         VStack {
             // Profile and Tags
-            RankingHeaderView(profile: user, image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false, displayHeader: $displayHeader)
+            RankingHeaderView(profile: user, image: image, username: username, tags: post.tags, pinned: profile ? post.pinned : false, displayHeader: $displayHeader, expanded: $expanded, feedExpanded: $feedExpanded)
             
-            if feedExpanded {
-                Text("Testing")
+            if feedExpanded && expanded {
+                ExpandedRankingImagesView(rankable: post.ranking, discover: false)
+                
+                CommentsView(comments: post.comments, profiles: profiles, expanded: true)
+                
+                RankingFooterView(comments: post.comments, associations: post.associations, expandComment: $commentsOpen, expandPost: $expandPost, expand: $expand)
             }
             
         } //: VSTACK
@@ -44,7 +53,9 @@ struct ExpandedMainFeedRankingView_Previews: PreviewProvider {
     @State static var displayHeader: Bool = true
     @State static var expand: Bool = false
     @State static var feedExpanded: Bool = true
+    @State static var expandPost: Bool = true
+    @State static var commentsOpen: Bool = true
     static var previews: some View {
-        ExpandedMainFeedRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, displayHeader: $displayHeader, expand: $expand, feedExpanded: $feedExpanded)
+        ExpandedMainFeedRankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, displayHeader: $displayHeader, expand: $expand, feedExpanded: $feedExpanded, expandPost: $expandPost, commentsOpen: $commentsOpen)
     }
 }

@@ -16,7 +16,7 @@ struct RankingImagesView: View {
     var body: some View {
         HStack(alignment: .top, spacing: 5) {
             ForEach(rankable.prefix(discover ? 3 : 5)) { data in
-                RankableSingleImageView(data: data)
+                RankableSingleImageView(data: data, topThree: discover)
             } //: LOOP
         } //: HSTACK
     }

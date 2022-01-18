@@ -15,6 +15,8 @@ struct RankingHeaderView: View {
     let tags: [String]
     let pinned: Bool
     @Binding var displayHeader: Bool
+    @Binding var expanded: Bool
+    @Binding var feedExpanded: Bool
     
     // MARK: - BODY
     var body: some View {
@@ -57,6 +59,16 @@ struct RankingHeaderView: View {
                     .font(.system(size: 12))
                     .foregroundColor(.white)
             } //: CONDITIONAL
+            else {
+                Button(action: {
+                    withAnimation {
+                        expanded.toggle()
+                    }
+                }, label: {
+                    Image(systemName: expanded ? "chevron.down.square" : "chevron.forward.square")
+                        .foregroundColor(.white)
+                })
+            }
         } //: HSTACK
     }
 }
@@ -68,8 +80,10 @@ struct RankingHeaderView_Previews: PreviewProvider {
     static let tags = ["Favorite", "Albums", "All Time"]
     @State static var displayHeader: Bool = true
     @State static var postExpanded: Bool = false
+    @State static var expanded: Bool = true
+    @State static var feedExpanded: Bool = true
     static var previews: some View {
-        RankingHeaderView(profile: profiles[0], image: image, username: username, tags: tags, pinned: true, displayHeader: $displayHeader)
+        RankingHeaderView(profile: profiles[0], image: image, username: username, tags: tags, pinned: true, displayHeader: $displayHeader, expanded: $expanded, feedExpanded: $feedExpanded)
             .previewLayout(.sizeThatFits)
     }
 }

@@ -30,22 +30,24 @@ struct RankingFooterView: View {
             }) //: BUTTON
             
             
-            Button(action: {
-                withAnimation {
-                    expandComment.toggle()
-                }
-            }, label: {
-                ZStack(alignment: .center) {
-                    Image(systemName: "bubble.left")
-                        .foregroundColor(.white)
-                        .font(.system(size: 25))
-                    
-                    Text("\(comments.count)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 15, weight: .semibold, design: .rounded))
-                        .offset(y: -2)
-                }
-            }) //: BUTTON
+            if !expandPost {
+                Button(action: {
+                    withAnimation {
+                        expandComment.toggle()
+                    }
+                }, label: {
+                    ZStack(alignment: .center) {
+                        Image(systemName: "bubble.left")
+                            .foregroundColor(.white)
+                            .font(.system(size: 25))
+                        
+                        Text("\(comments.count)")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15, weight: .semibold, design: .rounded))
+                            .offset(y: -2)
+                    }
+                }) //: BUTTON
+            }
             Spacer()
             OtherUsersCircleView(associations: associations)
         }

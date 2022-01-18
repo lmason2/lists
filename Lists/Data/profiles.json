@@ -38,6 +38,42 @@
                         "secondary": "Kanye West",
                         "tertiary": "2013"
                     },
+                    {
+                        "image": "blank",
+                        "basicInfo": "Blank Face",
+                        "secondary": "ScHoolboy Q",
+                        "tertiary": "2016"
+                    },
+                    {
+                        "image": "danny",
+                        "basicInfo": "Atrocity Exhibition",
+                        "secondary": "Danny Brown",
+                        "tertiary": "2016"
+                    },
+                    {
+                        "image": "lp",
+                        "basicInfo": "LP!",
+                        "secondary": "JPEGMAFIA",
+                        "tertiary": "2021"
+                    },
+                    {
+                        "image": "atliens",
+                        "basicInfo": "ATliens",
+                        "secondary": "OutKast",
+                        "tertiary": "1996"
+                    },
+                    {
+                        "image": "relapse",
+                        "basicInfo": "Relapse",
+                        "secondary": "Eminem",
+                        "tertiary": "2009"
+                    },
+                    {
+                        "image": "2001",
+                        "basicInfo": "2001",
+                        "secondary": "Dr. Dre",
+                        "tertiary": "1999"
+                    }
                 ],
                 "comments": [
                     {

@@ -13,13 +13,14 @@ struct ContentView: View {
     let discoverUsers: [Profile] = Bundle.main.decode("discover.json")
     @State var displayHeader: Bool = true
     @State var feedExpanded: Bool = true
+    @State var discoverExpanded: Bool = true
     
     // MARK: - BODY
     var body: some View {
         TabView {
             VStack {
                 if displayHeader {
-                    HeaderView(title: "Settings", image: "gearshape", feed: false, feedExpanded: $feedExpanded)
+                    HeaderView(title: "Settings", image: "gearshape", feed: false, discover: false, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
                 }
                 CreatePostView()
                 Spacer()
@@ -51,10 +52,10 @@ struct ContentView: View {
             NavigationView {
                 VStack {
                     if displayHeader {
-                        HeaderView(title: "Feed", image: "bolt", feed: true, feedExpanded: $feedExpanded)
+                        HeaderView(title: "Feed", image: "bolt", feed: true, discover: false, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
                     } //: CONDITIONAL
                     
-                    FeedView(displayHeader: $displayHeader, feedExpanded: $feedExpanded)
+                    FeedView(displayHeader: $displayHeader, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
                         .onAppear(perform: {
                             displayHeader = true
                         })
@@ -77,10 +78,10 @@ struct ContentView: View {
             
             VStack {
                 if displayHeader {
-                    HeaderView(title: "Discover", image: "globe", feed: false, feedExpanded: $feedExpanded)
+                    HeaderView(title: "Discover", image: "globe", feed: false, discover: true, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
                 } //: CONDITIONAL
                 
-                DiscoverView(discoverProfiles: discoverUsers, displayHeader: $displayHeader, feedExpanded: $feedExpanded)
+                DiscoverView(discoverProfiles: discoverUsers, displayHeader: $displayHeader, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
                     .onAppear(perform: {
                         displayHeader = true
                     })

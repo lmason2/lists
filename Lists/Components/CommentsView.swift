@@ -11,6 +11,7 @@ struct CommentsView: View {
     // MARK: - PROPERTIES
     let comments: [Comment]
     let profiles: [Profile]
+    let expanded: Bool
     
     // MARK: - BODY
     var body: some View {
@@ -18,10 +19,10 @@ struct CommentsView: View {
             ForEach(comments) { comment in
                 Divider()
                     .padding(.trailing, 10)
-                CommentListView(comment: comment, profile: profiles.first(where: { $0.id == comment.username })!)
+                CommentListView(comment: comment, profile: profiles.first(where: { $0.id == comment.username })!, expanded: expanded)
             } //: LOOP
         } //: SCROLL
-        .frame(maxWidth: 680, maxHeight: 200)
+        .frame(maxWidth: 680, maxHeight: expanded ? 150 : 200)
         .padding(.bottom, 5)
     }
 }
@@ -35,6 +36,6 @@ struct CommentsView_Previews: PreviewProvider {
     ]
     static let profiles: [Profile] = Bundle.main.decode("profile.json")
     static var previews: some View {
-        CommentsView(comments: comments, profiles: profiles)
+        CommentsView(comments: comments, profiles: profiles, expanded: false)
     }
 }
