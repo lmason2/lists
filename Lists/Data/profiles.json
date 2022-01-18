@@ -1,0 +1,228 @@
+[
+    {
+        "id": "bhogan9",
+        "name": "Ben Hogan",
+        "image": "Ben-main",
+        "posts": [
+            {
+                "typeString": "music",
+                "tags": ["Favorite", "Albums", "All Time"],
+                "ranking": [
+                    {
+                        "image": "idls",
+                        "basicInfo": "I Don't Like Shit, I Don't Go Outside",
+                        "secondary": "Earl Sweatshirt",
+                        "tertiary": "2015"
+                    },
+                    {
+                        "image": "alla",
+                        "basicInfo": "AT.LONG.LAST.A$AP",
+                        "secondary": "A$AP Rocky",
+                        "tertiary": "2015"
+                    },
+                    {
+                        "image": "oofie",
+                        "basicInfo": "OOFIE",
+                        "secondary": "WIKI",
+                        "tertiary": "2019"
+                    },
+                    {
+                        "image": "man",
+                        "basicInfo": "Man on the Moon: The End of Day",
+                        "secondary": "Kid Cudi",
+                        "tertiary": "2009"
+                    },
+                    {
+                        "image": "yeezus",
+                        "basicInfo": "YEEZUS",
+                        "secondary": "Kanye West",
+                        "tertiary": "2013"
+                    },
+                ],
+                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": true
+            },
+            {
+                "typeString": "television",
+                "tags": ["Favorite", "New", "Shows"],
+                "ranking": [
+                    {
+                        "image": "dave",
+                        "basicInfo": "Dave",
+                    }
+                ],
+                "comments": ["Fire", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            },
+            {
+                "typeString": "sports",
+                "tags": ["Most", "Difficult", "Sports"],
+                "ranking": [
+                    {
+                        "image": "biathalon",
+                        "basicInfo": "Bi-Athalon",
+                    }
+                ],
+                "comments": ["Fire", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            },
+            {
+                "typeString": "television",
+                "tags": ["Best", "Black Mirror", "Episodes"],
+                "ranking": [
+                    {
+                        "image": "blackmirror",
+                        "basicInfo": "Play Test",
+                    }
+                ],
+                "comments": ["Fire", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            },
+            {
+                "typeString": "food",
+                "tags": ["Best", "Trail", "Food"],
+                "ranking": [
+                    {
+                        "image": "fastbreak",
+                        "basicInfo": "Reese's Fast Break",
+                    }
+                ],
+                "comments": ["Fire", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            }
+        ],
+        "following": ["lukemason11", "sam_mccloughan", "yacineguermali"]
+    },
+    {
+        "id": "lukemason11",
+        "name": "Luke Mason",
+        "image": "Luke-main",
+        "posts": [
+            {
+                "typeString": "music",
+                "tags": ["Favorite", "Hip Hop", "Artists", "2021"],
+                "ranking": [
+                    {
+                        "image": "drake",
+                        "basicInfo": "Drake"
+                    },
+                    {
+                        "image": "jcole",
+                        "basicInfo": "J. Cole"
+                    },
+                    {
+                        "image": "vince",
+                        "basicInfo": "Vince Staples"
+                    },
+                    {
+                        "image": "kanye",
+                        "basicInfo": "Kanye West"
+                    },
+                    {
+                        "image": "mac",
+                        "basicInfo": "Mac Miller"
+                    },
+                ],
+                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            }
+        ],
+        "following": ["bhogan9", "sam_mccloughan", "yacineguermali"]
+    },
+    {
+        "id": "sam_mccloughan",
+        "name": "Sam McCloughan",
+        "image": "Sam-main",
+        "posts": [
+            {
+                "typeString": "movie",
+                "tags": ["Favorite", "Movies", "All Time"],
+                "ranking": [
+                    {
+                        "image": "night",
+                        "basicInfo": "NightCrawler",
+                        "secondary": "Dan Gilroy",
+                        "tertiary": "2014"
+                    },
+                    {
+                        "image": "stuart",
+                        "basicInfo": "Stuart Little",
+                        "secondary": "Rob Minkoff",
+                        "tertiary": "1999"
+                    },
+                    {
+                        "image": "shes",
+                        "basicInfo": "She's the Man",
+                        "secondary": "Andy Fickman",
+                        "tertiary": "2006"
+                    },
+                    {
+                        "image": "interstellar",
+                        "basicInfo": "Interstellar",
+                        "secondary": "Christopher Nolan",
+                        "tertiary": "2014"
+                    },
+                    {
+                        "image": "surfs",
+                        "basicInfo": "Surf's Up",
+                        "secondary": "Ash Brannon",
+                        "tertiary": "2007"
+                    },
+                ],
+                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            }
+        ],
+        "following": ["bhogan9", "lukemason11", "yacineguermali"]
+    },
+    {
+        "id": "yacineguermali",
+        "name": "Yacine Guermali",
+        "image": "Yacine-main",
+        "posts": [
+            {
+                "typeString": "food",
+                "tags": ["Best", "Chicken", "Sandwiches"],
+                "ranking": [
+                    {
+                        "image": "popeyes",
+                        "basicInfo": "Popeyes",
+                        "secondary": "Spicy Chicken Sandwich"
+                    },
+                    {
+                        "image": "chking",
+                        "basicInfo": "Burger King",
+                        "secondary": "Ch'King Sandwich"
+                    },
+                    {
+                        "image": "chick",
+                        "basicInfo": "Chick-Fil-A",
+                        "secondary": "Chicken Sandwich"
+                    },
+                    {
+                        "image": "cluck",
+                        "basicInfo": "Jack in the Box",
+                        "secondary": "Cluck Sandwich"
+                    },
+                    {
+                        "image": "mcdons",
+                        "basicInfo": "McDonald's",
+                        "secondary": "Crispy Chicken Sandwich"
+                    },
+                ],
+                "comments": ["Fire", "No way", "Swap first two", "Agreed"],
+                "associations": ["Luke-main", "Yacine-main", "Ben-main"],
+                "pinned": false
+            }
+        ],
+        "following": ["bhogan9", "sam_mccloughan", "lukemason11"]
+    }
+
+]
