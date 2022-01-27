@@ -78,55 +78,68 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Testing a longer comment and seeing how it handles multiline comments that are a bit longer",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     },
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     },
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": true
+                "pinned": true,
+                "likes": 1500
             },
             {
                 "typeString": "television",
@@ -140,23 +153,28 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": false
+                "pinned": false,
+                "likes": 1100
             },
             {
                 "typeString": "sports",
@@ -170,23 +188,28 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": false
+                "pinned": false,
+                "likes": 1150
             },
             {
                 "typeString": "television",
@@ -200,23 +223,28 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": false
+                "pinned": false,
+                "likes": 0
             },
             {
                 "typeString": "food",
@@ -230,23 +258,28 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Testing a longer comment and seeing how it handles multiline comments that are a bit longer",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": false
+                "pinned": false,
+                "likes": 1500
             }
         ],
         "following": ["lukemason11", "sam_mccloughan", "yacineguermali"]
@@ -284,23 +317,28 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": false
+                "pinned": false,
+                "likes": 20
             }
         ],
         "following": ["bhogan9", "sam_mccloughan", "yacineguermali"]
@@ -348,15 +386,18 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": false
+                "pinned": false,
+                "likes": 90
             }
         ],
         "following": ["bhogan9", "lukemason11", "yacineguermali"]
@@ -399,39 +440,48 @@
                 "comments": [
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     },
                     {
                         "username": "lukemason11",
-                        "content": "Fire"
+                        "content": "Fire",
+                        "likes": 0
                     },
                     {
                         "username": "bhogan9",
-                        "content": "No way"
+                        "content": "No way",
+                        "likes": 0
                     },
                     {
                         "username": "yacineguermali",
-                        "content": "Swap first two"
+                        "content": "Swap first two",
+                        "likes": 0
                     },
                     {
                         "username": "sam_mccloughan",
-                        "content": "Agreed"
+                        "content": "Agreed",
+                        "likes": 0
                     }
                 ],
                 "associations": ["Luke-main", "Yacine-main", "Ben-main"],
-                "pinned": false
+                "pinned": false,
+                "likes": 2000
             }
         ],
         "following": ["bhogan9", "sam_mccloughan", "lukemason11"]

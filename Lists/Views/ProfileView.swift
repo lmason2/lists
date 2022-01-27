@@ -14,8 +14,6 @@ struct ProfileView: View {
     @Binding var displayHeader: Bool
     @State var myProfile: Bool
     @State var postExpanded: Bool = false
-    @State var feedExpanded: Bool = true
-    @State var discoverExpanded: Bool = true
     
     // MARK: - BODY
     var body: some View {
@@ -26,8 +24,10 @@ struct ProfileView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 if pinned.count != 0 {
                     ForEach(pinned) { post in 
-                        RankingView(user: profile, image: profile.image, username: profile.id, post: post, profile: true, discover: false, displayHeader: $displayHeader, postExpanded: $postExpanded, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
-                            .padding(.horizontal, 3)
+                        RankingView(user: profile, image: profile.image, username: profile.id, post: post, profile: true, displayHeader: $displayHeader, postExpanded: postExpanded)
+                        .background(getGradient(type: post.type))
+                        .padding(.horizontal, 5)
+                        .cornerRadius(10)
                     } //: LOOP
                 }
                 

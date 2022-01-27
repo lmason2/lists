@@ -23,4 +23,9 @@ func getGradient(type: type) -> LinearGradient {
             return LinearGradient(gradient: Gradient(colors: [Color.gray.opacity(0.7), Color.blue.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
     }
 }
+
+enum Field {
+    case match
+    case mismatch
+}
     

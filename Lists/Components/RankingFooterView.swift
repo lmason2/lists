@@ -9,11 +9,13 @@ import SwiftUI
 
 struct RankingFooterView: View {
     // MARK: - PROPERTIES
-    let comments: [Comment]
-    let associations: [String]
-    @Binding var expandComment: Bool
+    let user: Profile
+    let image: String
+    let username: String
+    let post: Post
+    let profiles: [Profile] = Bundle.main.decode("profiles.json")
     @Binding var expandPost: Bool
-    @Binding var expand: Bool
+    @State private var isShowingSheet: Bool = false
     
     // MARK: - BODY
     var body: some View {
@@ -21,7 +23,6 @@ struct RankingFooterView: View {
             Button(action: {
                 withAnimation {
                     expandPost.toggle()
-                    expand.toggle()
                 }
             }, label: {
                 Image(systemName: "square.stack.3d.up")
@@ -31,42 +32,42 @@ struct RankingFooterView: View {
             
             
             if !expandPost {
-                Button(action: {
-                    withAnimation {
-                        expandComment.toggle()
-                    }
-                }, label: {
-                    ZStack(alignment: .center) {
-                        Image(systemName: "bubble.left")
-                            .foregroundColor(.white)
-                            .font(.system(size: 25))
-                        
-                        Text("\(comments.count)")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .semibold, design: .rounded))
-                            .offset(y: -2)
-                    }
-                }) //: BUTTON
+                ZStack(alignment: .center) {
+                    Image(systemName: "bubble.left")
+                        .foregroundColor(.white)
+                        .font(.system(size: 25))
+                    
+                    Text("\(post.comments.count)")
+                        .foregroundColor(.white)
+                        .font(.system(size: 15, weight: .semibold, design: .rounded))
+                        .offset(y: -2)
+                }
+            }
+            
+            Button(action: {
+                isShowingSheet = true
+            }, label: {
+                Image(systemName: "arrowshape.turn.up.left")
+                    .foregroundColor(.white)
+                    .font(.system(size: 25))
+            })
+            .sheet(isPresented: $isShowingSheet) {
+                FullPostView(user: user, image: image, username: username, post: post, profiles: profiles)
+                .background(
+                    getGradient(type: post.type)
+                )
             }
             Spacer()
-            OtherUsersCircleView(associations: associations)
+            OtherUsersCircleView(associations: post.associations)
         }
         .padding(.top, 5)
     }
 }
 
 struct RankingFooterView_Previews: PreviewProvider {
-    static let comments = [
-        Comment(username: "lukemason11", content: "Fire"),
-        Comment(username: "bhogan9", content: "No way"),
-        Comment(username: "yacineguermali", content: "Swap first two"),
-        Comment(username: "sam_mccloughan", content: "Agreed")
-    ]
-    static let associations = ["Luke-main", "Yacine-main", "Ben-main"]
-    @State static var expandComments: Bool = false
+    static let profiles: [Profile] = Bundle.main.decode("profiles.json")
     @State static var expandPost: Bool = false
-    @State static var expand: Bool = false
     static var previews: some View {
-        RankingFooterView(comments: comments, associations: associations, expandComment: $expandComments, expandPost: $expandPost, expand: $expand)
+        RankingFooterView(user: profiles[0], image: profiles[0].image, username: profiles[0].id, post: profiles[0].posts[0], expandPost: $expandPost)
     }
 }

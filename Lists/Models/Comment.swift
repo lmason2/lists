@@ -11,4 +11,5 @@ struct Comment: Codable, Identifiable {
     let id = UUID()
     let username: String
     let content: String
+    let likes: Int
 }

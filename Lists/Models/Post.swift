@@ -15,6 +15,7 @@ class Post: Codable, Identifiable, ObservableObject{
     let comments: [Comment]
     let associations: [String]
     let pinned: Bool
+    let likes: Int
     var type: type {
         if typeString == "music" {
             return .music

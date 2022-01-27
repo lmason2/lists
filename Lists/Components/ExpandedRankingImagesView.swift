@@ -8,27 +8,23 @@
 import SwiftUI
 
 struct ExpandedRankingImagesView: View {
+    var items: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     let rankable: [Rankable]
     let discover: Bool
     
     var body: some View {
-        VStack {
-            HStack(alignment: .top) {
-                ForEach(rankable.prefix(3)) { data in
-                    RankableSingleImageView(data: data, topThree: true)
-                } //: LOOP
-            }
-            if rankable.count > 3 {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(3..<rankable.count) { index in
-                            RankableSingleImageView(data: rankable[index], topThree: false)
+        ScrollView(.vertical, showsIndicators: false) {
+            ForEach(0..<((rankable.count - 1) / 3) + 1) { i in
+                HStack(alignment: .top, spacing: 5) {
+                    ForEach(0..<3) {j in
+                        if (((i * 3) + j) < (rankable.count)) {
+                            RankableSingleImageView(data: rankable[(i * 3) + j], fullPost: false)
                         }
                     }
                 }
             }
-            
         }
+        .frame(height: rankable.count < 4 ? 125 : 225)
     }
 }
 

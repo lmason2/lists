@@ -14,34 +14,19 @@ struct RankingView: View {
     let username: String
     let post: Post
     let profile: Bool
-    let discover: Bool
     @Binding var displayHeader: Bool
-    @Binding var postExpanded: Bool
-    @State var expand: Bool = false
-    @Binding var feedExpanded: Bool
-    @Binding var discoverExpanded: Bool
+    @State var postExpanded: Bool = false
     
     @State var commentsOpen: Bool = false
     let users: [Profile] = Bundle.main.decode("profiles.json")
     
     // MARK: - BODY
     var body: some View {
-        if discover {
-            if expand {
-                ExpandedMainDiscoverRankingView(user: user, image: image, username: username, post: post, profile: profile, displayHeader: $displayHeader, postExpanded: $postExpanded, expand: $expand, discoverExpanded: $discoverExpanded)
-            }
-            else {
-                MainDiscoverRankingView(user: user, image: image, username: username, post: post, profile: profile, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded, expand: $expand, discoverExpanded: $discoverExpanded)
-            }
+        if postExpanded {
+            ExpandedRankingView(user: user, image: image, username: username, post: post, profile: profile, displayHeader: $displayHeader, expandPost: $postExpanded)
         }
         else {
-            if expand {
-                ExpandedMainFeedRankingView(user: user, image: image, username: username, post: post, profile: profile, displayHeader: $displayHeader, expand: $expand, feedExpanded: $feedExpanded, expandPost: $postExpanded, commentsOpen: $commentsOpen)
-            }
-            else {
-                MainFeedRankingView(user: user, image: image, username: username, post: post, profile: profile, commentsOpen: $commentsOpen, displayHeader: $displayHeader, postExpanded: $postExpanded, expand: $expand, feedExpanded: $feedExpanded)
-            }
-            
+            MainRankingView(user: user, image: image, username: username, post: post, profile: profile, displayHeader: $displayHeader, postExpanded: $postExpanded)
         }
     }
 }
@@ -49,10 +34,7 @@ struct RankingView: View {
 struct RankingView_Previews: PreviewProvider {
     static let users: [Profile] = Bundle.main.decode("profile.json")
     @State static var displayHeader: Bool = true
-    @State static var postExpanded: Bool = false
-    @State static var feedExpanded: Bool = true
-    @State static var discoverExpanded: Bool = true
     static var previews: some View {
-        RankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, discover: true, displayHeader: $displayHeader, postExpanded: $postExpanded, expand: false, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
+        RankingView(user: users[0], image: users[0].image, username: users[0].id, post: users[0].posts[0], profile: false, displayHeader: $displayHeader)
     }
 }

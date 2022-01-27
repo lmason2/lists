@@ -29,8 +29,7 @@ struct ProfileRankingView: View {
         .background(
             getGradient(type: post.type)
         )
-        .cornerRadius(5)
-        
+        .cornerRadius(10)
     }
 }
 

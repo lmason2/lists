@@ -13,13 +13,21 @@ struct HeaderView: View {
     let image: String
     let feed: Bool
     let discover: Bool
-    @Binding var feedExpanded: Bool
-    @Binding var discoverExpanded: Bool
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
     
     // MARK: - BODY
     var body: some View {
         ZStack {
             HStack {
+                Button(action: {
+                    withAnimation {
+                        isLoggedIn = false
+                    }
+                }, label: {
+                    Image(systemName: "rectangle.portrait.and.arrow.right")
+                        .foregroundColor(.white)
+                        .padding(.leading, 10)
+                })
                 Spacer()
                 Text(title)
                     .foregroundColor(.white)
@@ -36,21 +44,6 @@ struct HeaderView: View {
             
             HStack(spacing: 0) {
                 Spacer()
-                if feed || discover {
-                    Button(action: {
-                        withAnimation {
-                            if feed {
-                                feedExpanded.toggle()
-                            }
-                            else {
-                                discoverExpanded.toggle()
-                            }
-                        }
-                    }, label: {
-                        Image(systemName: feedExpanded ? "chevron.down.square" : "chevron.forward.square")
-                            .foregroundColor(.white)
-                    })
-                }
                 
                 Image(systemName: "slider.horizontal.3")
                     .foregroundColor(.white)
@@ -61,9 +54,7 @@ struct HeaderView: View {
 }
 
 struct HeaderView_Previews: PreviewProvider {
-    @State static var feedExpanded: Bool = true
-    @State static var discoverExpanded: Bool = true
     static var previews: some View {
-        HeaderView(title: "Feed", image: "bolt", feed: true, discover: false, feedExpanded: $feedExpanded, discoverExpanded: $discoverExpanded)
+        HeaderView(title: "Feed", image: "bolt", feed: true, discover: false)
     }
 }

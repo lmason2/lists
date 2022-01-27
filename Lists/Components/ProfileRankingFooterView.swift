@@ -39,10 +39,10 @@ struct ProfileRankingFooterView: View {
 
 struct ProfileRankingFooterView_Previews: PreviewProvider {
     static let comments = [
-        Comment(username: "lukemason11", content: "Fire"),
-        Comment(username: "bhogan9", content: "No way"),
-        Comment(username: "yacineguermali", content: "Swap first two"),
-        Comment(username: "sam_mccloughan", content: "Agreed")
+        Comment(username: "lukemason11", content: "Fire", likes: 0),
+        Comment(username: "bhogan9", content: "No way", likes: 0),
+        Comment(username: "yacineguermali", content: "Swap first two", likes: 0),
+        Comment(username: "sam_mccloughan", content: "Agreed", likes: 0)
     ]
     static let associations: [String] = ["Luke-main", "Yacine-main", "Sam-main"]
     @State static var expandComments: Bool = false

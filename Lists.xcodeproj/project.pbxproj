@@ -26,6 +26,11 @@
 		9A015EBE2795FDA800F97DCE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015EBD2795FDA800F97DCE /* Post.swift */; };
 		9A015EC12795FF4A00F97DCE /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015EC02795FF4A00F97DCE /* CodableBundleExtension.swift */; };
 		9A015EC327961CED00F97DCE /* ProfileHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A015EC227961CED00F97DCE /* ProfileHeadingView.swift */; };
+		9A9A4DA3279C3118008236FB /* HorizontalLikeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A4DA2279C3118008236FB /* HorizontalLikeCounter.swift */; };
+		9A9A4DA7279C4469008236FB /* FullPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A4DA6279C4469008236FB /* FullPostView.swift */; };
+		9A9A4DA9279C4626008236FB /* FullPostImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A4DA8279C4626008236FB /* FullPostImagesView.swift */; };
+		9A9A4DAB279C462F008236FB /* FullPostCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A4DAA279C462F008236FB /* FullPostCommentsView.swift */; };
+		9A9A4DAF279C80E8008236FB /* SignInWIthEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A4DAE279C80E8008236FB /* SignInWIthEmail.swift */; };
 		9AD23F2D2796206E0006352B /* ProfileRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F2C2796206E0006352B /* ProfileRankingView.swift */; };
 		9AD23F2F279620B90006352B /* ProfileRankingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F2E279620B90006352B /* ProfileRankingHeaderView.swift */; };
 		9AD23F31279620CB0006352B /* ProfileRankingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F30279620CB0006352B /* ProfileRankingImageView.swift */; };
@@ -33,19 +38,16 @@
 		9AD23F352796218C0006352B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F342796218C0006352B /* Profile.swift */; };
 		9AD23F37279621D90006352B /* profiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD23F36279621D90006352B /* profiles.json */; };
 		9AD23F39279630A10006352B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F38279630A10006352B /* Constant.swift */; };
-		9AD23F3B2796414D0006352B /* DiscoverRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F3A2796414D0006352B /* DiscoverRankingView.swift */; };
+		9AD23F3B2796414D0006352B /* LikeableRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F3A2796414D0006352B /* LikeableRankingView.swift */; };
 		9AD23F3D279642A10006352B /* discover.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD23F3C279642A10006352B /* discover.json */; };
-		9AD23F3F279645220006352B /* LikeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F3E279645220006352B /* LikeCounter.swift */; };
+		9AD23F3F279645220006352B /* VerticalLikeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F3E279645220006352B /* VerticalLikeCounter.swift */; };
 		9AD23F412796EB7F0006352B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F402796EB7F0006352B /* CommentsView.swift */; };
 		9AD23F432796EEC10006352B /* CommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F422796EEC10006352B /* CommentListView.swift */; };
 		9AD23F45279709D40006352B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F44279709D40006352B /* Comment.swift */; };
 		9AD23F4727974D150006352B /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4627974D150006352B /* CreatePostView.swift */; };
-		9AD23F4927975AC10006352B /* MainDiscoverRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4827975AC10006352B /* MainDiscoverRankingView.swift */; };
-		9AD23F4B27975B6F0006352B /* MainFeedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */; };
-		9AD23F4D27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */; };
-		9AD23F4F27975BE70006352B /* ExpandedMainFeedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */; };
+		9AD23F4927975AC10006352B /* MainRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4827975AC10006352B /* MainRankingView.swift */; };
+		9AD23F4F27975BE70006352B /* ExpandedRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F4E27975BE70006352B /* ExpandedRankingView.swift */; };
 		9AD23F51279779660006352B /* ExpandedRankingImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F50279779660006352B /* ExpandedRankingImagesView.swift */; };
-		9AD23F5327977D960006352B /* ExpandedRankingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD23F5227977D960006352B /* ExpandedRankingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,11 @@
 		9A015EBD2795FDA800F97DCE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9A015EC02795FF4A00F97DCE /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		9A015EC227961CED00F97DCE /* ProfileHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeadingView.swift; sourceTree = "<group>"; };
+		9A9A4DA2279C3118008236FB /* HorizontalLikeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalLikeCounter.swift; sourceTree = "<group>"; };
+		9A9A4DA6279C4469008236FB /* FullPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPostView.swift; sourceTree = "<group>"; };
+		9A9A4DA8279C4626008236FB /* FullPostImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPostImagesView.swift; sourceTree = "<group>"; };
+		9A9A4DAA279C462F008236FB /* FullPostCommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPostCommentsView.swift; sourceTree = "<group>"; };
+		9A9A4DAE279C80E8008236FB /* SignInWIthEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWIthEmail.swift; sourceTree = "<group>"; };
 		9AD23F2C2796206E0006352B /* ProfileRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRankingView.swift; sourceTree = "<group>"; };
 		9AD23F2E279620B90006352B /* ProfileRankingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRankingHeaderView.swift; sourceTree = "<group>"; };
 		9AD23F30279620CB0006352B /* ProfileRankingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRankingImageView.swift; sourceTree = "<group>"; };
@@ -76,19 +83,16 @@
 		9AD23F342796218C0006352B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9AD23F36279621D90006352B /* profiles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profiles.json; sourceTree = "<group>"; };
 		9AD23F38279630A10006352B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		9AD23F3A2796414D0006352B /* DiscoverRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRankingView.swift; sourceTree = "<group>"; };
+		9AD23F3A2796414D0006352B /* LikeableRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeableRankingView.swift; sourceTree = "<group>"; };
 		9AD23F3C279642A10006352B /* discover.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = discover.json; sourceTree = "<group>"; };
-		9AD23F3E279645220006352B /* LikeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCounter.swift; sourceTree = "<group>"; };
+		9AD23F3E279645220006352B /* VerticalLikeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalLikeCounter.swift; sourceTree = "<group>"; };
 		9AD23F402796EB7F0006352B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		9AD23F422796EEC10006352B /* CommentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView.swift; sourceTree = "<group>"; };
 		9AD23F44279709D40006352B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		9AD23F4627974D150006352B /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
-		9AD23F4827975AC10006352B /* MainDiscoverRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiscoverRankingView.swift; sourceTree = "<group>"; };
-		9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedRankingView.swift; sourceTree = "<group>"; };
-		9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedMainDiscoverRankingView.swift; sourceTree = "<group>"; };
-		9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedMainFeedRankingView.swift; sourceTree = "<group>"; };
+		9AD23F4827975AC10006352B /* MainRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRankingView.swift; sourceTree = "<group>"; };
+		9AD23F4E27975BE70006352B /* ExpandedRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedRankingView.swift; sourceTree = "<group>"; };
 		9AD23F50279779660006352B /* ExpandedRankingImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedRankingImagesView.swift; sourceTree = "<group>"; };
-		9AD23F5227977D960006352B /* ExpandedRankingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedRankingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,16 +210,18 @@
 				9AD23F2E279620B90006352B /* ProfileRankingHeaderView.swift */,
 				9AD23F30279620CB0006352B /* ProfileRankingImageView.swift */,
 				9AD23F32279620D50006352B /* ProfileRankingFooterView.swift */,
-				9AD23F3A2796414D0006352B /* DiscoverRankingView.swift */,
-				9AD23F3E279645220006352B /* LikeCounter.swift */,
+				9AD23F3A2796414D0006352B /* LikeableRankingView.swift */,
+				9AD23F3E279645220006352B /* VerticalLikeCounter.swift */,
 				9AD23F402796EB7F0006352B /* CommentsView.swift */,
 				9AD23F422796EEC10006352B /* CommentListView.swift */,
-				9AD23F4827975AC10006352B /* MainDiscoverRankingView.swift */,
-				9AD23F4A27975B6F0006352B /* MainFeedRankingView.swift */,
-				9AD23F4C27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift */,
-				9AD23F4E27975BE70006352B /* ExpandedMainFeedRankingView.swift */,
+				9AD23F4827975AC10006352B /* MainRankingView.swift */,
+				9AD23F4E27975BE70006352B /* ExpandedRankingView.swift */,
 				9AD23F50279779660006352B /* ExpandedRankingImagesView.swift */,
-				9AD23F5227977D960006352B /* ExpandedRankingFooterView.swift */,
+				9A9A4DA2279C3118008236FB /* HorizontalLikeCounter.swift */,
+				9A9A4DA6279C4469008236FB /* FullPostView.swift */,
+				9A9A4DA8279C4626008236FB /* FullPostImagesView.swift */,
+				9A9A4DAA279C462F008236FB /* FullPostCommentsView.swift */,
+				9A9A4DAE279C80E8008236FB /* SignInWIthEmail.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -300,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD23F3B2796414D0006352B /* DiscoverRankingView.swift in Sources */,
-				9AD23F4927975AC10006352B /* MainDiscoverRankingView.swift in Sources */,
+				9AD23F3B2796414D0006352B /* LikeableRankingView.swift in Sources */,
+				9AD23F4927975AC10006352B /* MainRankingView.swift in Sources */,
+				9A9A4DA9279C4626008236FB /* FullPostImagesView.swift in Sources */,
+				9A9A4DAF279C80E8008236FB /* SignInWIthEmail.swift in Sources */,
 				9A015EB62795EA3D00F97DCE /* RankableSingleImageView.swift in Sources */,
 				9AD23F412796EB7F0006352B /* CommentsView.swift in Sources */,
 				9A015EC327961CED00F97DCE /* ProfileHeadingView.swift in Sources */,
@@ -309,32 +317,32 @@
 				9AD23F352796218C0006352B /* Profile.swift in Sources */,
 				9AD23F432796EEC10006352B /* CommentListView.swift in Sources */,
 				9A015EAC2795E4BB00F97DCE /* RankingView.swift in Sources */,
-				9AD23F4F27975BE70006352B /* ExpandedMainFeedRankingView.swift in Sources */,
+				9AD23F4F27975BE70006352B /* ExpandedRankingView.swift in Sources */,
 				9AD23F51279779660006352B /* ExpandedRankingImagesView.swift in Sources */,
 				9AD23F4727974D150006352B /* CreatePostView.swift in Sources */,
 				9AD23F33279620D50006352B /* ProfileRankingFooterView.swift in Sources */,
 				9A015EAE2795E52200F97DCE /* RankingHeaderView.swift in Sources */,
-				9AD23F5327977D960006352B /* ExpandedRankingFooterView.swift in Sources */,
 				9A015EB02795E53500F97DCE /* RankingImagesView.swift in Sources */,
 				9AD23F45279709D40006352B /* Comment.swift in Sources */,
 				9A015EBA2795F32F00F97DCE /* OtherUsersCircleView.swift in Sources */,
 				9AD23F31279620CB0006352B /* ProfileRankingImageView.swift in Sources */,
 				9AD23F39279630A10006352B /* Constant.swift in Sources */,
 				9A015EA02795D95E00F97DCE /* ProfileView.swift in Sources */,
-				9AD23F4D27975BDC0006352B /* ExpandedMainDiscoverRankingView.swift in Sources */,
 				9A015EB42795E99E00F97DCE /* Rankable.swift in Sources */,
+				9A9A4DA7279C4469008236FB /* FullPostView.swift in Sources */,
+				9A9A4DAB279C462F008236FB /* FullPostCommentsView.swift in Sources */,
 				9A015E862795D87600F97DCE /* ListsApp.swift in Sources */,
 				9AD23F2D2796206E0006352B /* ProfileRankingView.swift in Sources */,
 				9A015EC12795FF4A00F97DCE /* CodableBundleExtension.swift in Sources */,
+				9A9A4DA3279C3118008236FB /* HorizontalLikeCounter.swift in Sources */,
 				9A015EA42795D96C00F97DCE /* DiscoverView.swift in Sources */,
-				9AD23F4B27975B6F0006352B /* MainFeedRankingView.swift in Sources */,
 				9A015EBE2795FDA800F97DCE /* Post.swift in Sources */,
 				9A015EA22795D96500F97DCE /* FeedView.swift in Sources */,
 				9AD23F2F279620B90006352B /* ProfileRankingHeaderView.swift in Sources */,
 				9A015E992795D8EB00F97DCE /* AuthenticationView.swift in Sources */,
 				9A015EB22795E53E00F97DCE /* RankingFooterView.swift in Sources */,
 				9A015EA82795E0CB00F97DCE /* HeaderView.swift in Sources */,
-				9AD23F3F279645220006352B /* LikeCounter.swift in Sources */,
+				9AD23F3F279645220006352B /* VerticalLikeCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

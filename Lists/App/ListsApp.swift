@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct ListsApp: App {
-    @AppStorage("isLoggedIn") var isLoggedIn: Bool = true
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
     var body: some Scene {
         WindowGroup {
             if isLoggedIn {
